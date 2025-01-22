@@ -13,11 +13,11 @@ export class AuthService {
 
     async createAccount({email,password,name}){
         try {
-            const userAccound = await this.account.create(ID.unique(),email,password,name);
-            if(userAccound){
+            const userAccount = await this.account.create(ID.unique(),email,password,name);
+            if(userAccount){
                 return this.login({email,password})
             }else{
-                return userAccound
+                return userAccount
             }
         } catch (error) {
             throw error;
@@ -54,6 +54,5 @@ export class AuthService {
     }
 }
 
-// Suggested code may be subject to a license. Learn more: ~LicenseLog:3683121175.
 const authservice = new AuthService();
 export default authservice;
