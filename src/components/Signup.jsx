@@ -7,7 +7,8 @@ import { login } from "../store/authSlice";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "./Logo";
-import { Input } from "./Input";
+import  Input  from "./Input.jsx";
+import Button from "./Button";
 function Signup() {
   const navigate = useNavigate();
   const [error, setError] = useState("");

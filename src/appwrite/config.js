@@ -83,7 +83,7 @@ export class Service{
             )
             
         } catch (error) {
-            console.log("haay tauba error thay gayo! 🙀🙀")
+            console.log("haay tauba error thay gayo! 🙀🙀",error)
         }
     }
     async uploadFile(file){
